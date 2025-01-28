@@ -80,6 +80,7 @@ function AlterarProduto(){
                 <div>
                     <label htmlFor="imagem">imagem</label>
                     <input type="text" name="imagem" value={imagem} onChange={handleImagem}/>
+                    {imagem && <img className="imagem-previa-upload" src={imagem}/> }
                 </div>
                 <div>
                     <input type="submit" value="Cadastrar"/>
